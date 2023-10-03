@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Open+Sans:ital,wght@1,500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <form id="form" action="/" autocomplete="off">
+            <h1>Form Registrasi</h1>
+
+            <div class="input-control">
+                <div class="autocomplete" style="width:300px;">
+                    <label for="fname">Nama</label>
+                    <input type="text" id="fname" name="name" placeholder="Masukkan Nama.." required>
+                    <div class="error"></div>
+                    <div id="namaRekomendasi" class="rekomendasi"></div>
+                </div>
+            </div>            
+
+            <div class="input-control">
+                <div class="autocomplete" style="width:300px;">
+                    <label for="fnim">NIM</label>
+                    <input type="text" id="fnim" name="nim" placeholder="Masukkan NIM.." required>
+                    <div class ="error"></div>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <div class="autocomplete" style="width:300px;">
+                    <label for="fmatkul">Mata Kuliah</label>
+                    <input type="text" id="fmatkul" name="matkul" placeholder="Masukkan Mata Kuliah.." required>
+                    <div class ="error"></div>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <div class="autocomplete" style="width:300px;">
+                    <label for="fdosen">Nama Dosen</label>
+                    <input type="text" id="fdosen" name="dosen" placeholder="Masukkan Nama Dosen.." required>
+                    <div class ="error"></div>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
